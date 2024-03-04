@@ -22,7 +22,7 @@ export const login = async (req, res, next) => {
   }
 };
 
-export const register = async (req, res) => {
+export const register = async (req, res, next) => { // Add `next` parameter here
   try {
     const { name, email, password } = req.body;
 
